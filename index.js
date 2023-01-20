@@ -12,6 +12,10 @@ app.use(
 
 app.use(express.json());
 
+const clienteRoutes = require("./routes/clienteRoutes");
+
+app.use("/cliente", clienteRoutes);
+
 const personRoutes = require("./routes/personRoutes");
 
 app.use("/person", personRoutes);
