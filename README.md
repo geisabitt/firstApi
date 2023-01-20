@@ -8,7 +8,7 @@
 - [x]Alterar dados PATCH
 - [x]Deletar dados Individuais DELETE/:ID
 
-## API rota /Person
+## API rota /Cliente
 - [x]Criar dados POST
     - - [o]nome: String,
     - - [o]sobrenome: String,
