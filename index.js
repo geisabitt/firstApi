@@ -1,7 +1,9 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-
+const dayjs = require("dayjs");
+//import dayjs from 'dayjs' // ES 2015
+dayjs().format();
 const app = express();
 
 app.use(
@@ -14,15 +16,15 @@ app.use(express.json());
 
 const clienteRoutes = require("./routes/clienteRoutes");
 
-app.use("/cliente", clienteRoutes);
+app.use("/api/cliente", clienteRoutes);
 
 const personRoutes = require("./routes/personRoutes");
 
-app.use("/person", personRoutes);
+app.use("/api/person", personRoutes);
 
 const pessoaRoutes = require("./routes/pessoaRoute");
 
-app.use("/pessoa", pessoaRoutes);
+app.use("/api/pessoa", pessoaRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "Oi Espress!" });
