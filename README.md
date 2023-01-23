@@ -1,12 +1,7 @@
-## API rota /Person
-- [x]Criar dados POST
-    - - [o]name: String,
-    - - [o]salary: Number,
-    - - [o]approved: Boolean,
-- [x]Ler dados GET
-- [x]Ler dados dividuais GET/:ID
-- [x]Alterar dados PATCH
-- [x]Deletar dados Individuais DELETE/:ID
+Criar um arquivo .env na raís da api e coloque o usuario e senha do seu banco de dados para que funcione
+DB_USER=/SeuUsuario/
+DB_PASSWORD=/suaSenha/
+
 
 ## API rota /Cliente
 - [x]Criar dados POST
@@ -20,6 +15,16 @@
     - - [o]complemento: String,
     - - [o]cidade: String,
     - - [o]estado: String,
+- [x]Ler dados GET
+- [x]Ler dados dividuais GET/:ID
+- [x]Alterar dados PATCH
+- [x]Deletar dados Individuais DELETE/:ID
+
+## API rota /Person
+- [x]Criar dados POST
+    - - [o]name: String,
+    - - [o]salary: Number,
+    - - [o]approved: Boolean,
 - [x]Ler dados GET
 - [x]Ler dados dividuais GET/:ID
 - [x]Alterar dados PATCH
