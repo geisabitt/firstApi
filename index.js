@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
 
 const DB_USER = process.env.DB_USER;
 const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD);
+const PORT = 3500 || process.env.PORT;
 
 mongoose
   .connect(
@@ -39,6 +40,6 @@ mongoose
   )
   .then(() => {
     console.log("Conectamos ao MongoDB!");
-    app.listen(3500);
+    app.listen(PORT);
   })
   .catch((err) => console.log(err));
