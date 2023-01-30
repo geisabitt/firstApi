@@ -150,9 +150,9 @@ router.patch("/:id", async (req, res) => {
       return;
     }
 
-    res.status(200).json(cliente);
+    res.status(201).json({ message: "Cliente editado com sucesso!" });
   } catch (error) {
-    res.status(500).json({ erro: error });
+    res.status(500).json({ error: error });
   }
 });
 
