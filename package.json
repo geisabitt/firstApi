@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./index.js localhost 3500"
+    "start": "nodemon ./index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,7 @@
   "engines": {
     "node": "18.12.1"
   },
-  
+
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
